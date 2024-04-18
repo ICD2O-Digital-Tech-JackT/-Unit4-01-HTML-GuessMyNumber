@@ -1,5 +1,10 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
+function Submit(){
+  let Number = document.getElementById("num").value
+  let ComputerGuess = Math.floor(Math.random()*10)
+  document.getElementById("Output").innerHTML=  "<p> The computers guess: "+ComputerGuess+"<br>"+"Your guess: "+Number+"</p>"
+  if (Number==ComputerGuess){
+    document.getElementById("Result").innerHTML="<p>You win!</p>"
+  } else{
+    document.getElementById("Result").innerHTML="<p>You lose!</p>"
+  }
+}

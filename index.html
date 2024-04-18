@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Guess my Number!</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/DiceFavicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/DiceFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/DiceFavicon/favicon-16x16.png">
+    <link rel="manifest" href="/DiceFavicon/site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <script src="/js/script.js"></script>
+    <h1>Guess my Number!</h1>
+
+    <br>
+    <center>
+      <table>
+        <tr>
+          <th>
+            <img src="images/Dice Image.jpg" style="width: 250px;"> 
+          </th>
+          <td>
+            <p>Guess my number!:</p> <br>
+            <input id="num" placeholder="(1-10)" type="number" min="0" step="1" max=10>
+            <br>
+            <br>
+            <button onclick="Submit()" id="Submit">Submit</button>
+            <br>
+            <div id="Output"> <p>The computers guess:</p> </div>
+            <div id="Result"></div>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
